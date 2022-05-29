@@ -6,9 +6,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gemspec
 
-gem "rails", github: "rails/rails"
-gem "arel", github: "rails/arel"
-gem "rack", github: "rack/rack"
+gem "rails", "~> 5.2.8"
+gem "rack"
 
 group :development do
   platform :ruby do
