@@ -22,7 +22,7 @@ module WebConsole
     # leaking globals, unless you explicitly want to.
     def render_javascript(template)
       assign(template: template)
-      render(template: template, layout: "layouts/javascript")
+      render(template: template, layout: "layouts/javascript.html")
     end
 
     # Render inlined string to be used inside of JavaScript code.
@@ -30,7 +30,7 @@ module WebConsole
     # The inlined string is returned as an actual JavaScript string. You
     # don't need to wrap the result yourself.
     def render_inlined_string(template)
-      render(template: template, layout: "layouts/inlined_string")
+      render(template: template, layout: "layouts/inlined_string.html")
     end
 
     # Custom ActionView::Base#render wrapper which silences all the log
