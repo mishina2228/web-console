@@ -6,7 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gemspec
 
-gem "rails", "6.0.0"
+gem "rails", "6.0.3"
 gem "rack"
 
 group :development do
