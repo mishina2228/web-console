@@ -15,6 +15,7 @@ group :development do
     gem "byebug"
   end
   gem "puma"
+  gem "rubocop"
 end
 
 group :test do
